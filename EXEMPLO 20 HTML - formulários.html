@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemplo 20 - Formulários</title>
+</head>
+
+<body>
+    <fieldset>
+        <legend>Pedido</legend>
+        <form action="paginaDestino" method="get">
+            <h1>Exemplo 20 - Formulários</h1>
+            <div>
+                <label for="">Cliente: </label> <br>
+                <select name="cboFuncionário" id="cboFuncionárioid">
+                    <option value="1">José da Silva</option>
+                    <option value="2">João da Silva</option>
+                    <option value="3">Kelvin da Silva</option>
+                    <option value="4">Juliano da Silva</option>
+                    <option value="5">Philipe da Silva</option>
+                    <option value="6">Rogério da Silva</option>
+                    <option value="7">Marquinho da VT</option>
+                </select>
+            </div>
+            <br>
+            <div>
+                <label for="">Funcionário:</label><br>
+                <select name="cboFuncionário" id="cboFuncionárioid">
+                    <option value="1">José da Silva</option>
+                    <option value="2">João da Silva</option>
+                    <option value="3">Kelvin da Silva</option>
+                    <option value="4">Juliano da Silva</option>
+                    <option value="5">Philipe da Silva</option>
+                    <option value="6">Rogério da Silva</option>
+                    <option value="7">Marquinho da VT</option>
+                </select>
+            </div>
+            <br>
+            <div>
+                <label for="">Data do Pedido</label>
+                <input type="date" name="txtDataPedido" id="txtDataPedido" min="2010-01-01" max="2050-01-01">
+            </div>
+            <br>
+            <div>
+                <label for="">Valor total</label>
+                <input type="text" name="txtTotalPedido" id="idtxtTotalPedido" placeholder="0,00R$">
+            </div>
+    </fieldset>
+    <fieldset>
+        <div>
+            <label for="">Pedidos Cadastrados</label>
+            <table border="10px">
+                <thead>
+                    <tr>
+                        <th>Codigo</th>
+                        <th>Funcionário</th>
+                        <th>Cliente</th>
+                        <th>Data da compra</th>
+                        <th>Valor do pedido</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>0001</td>
+                        <td>José da Silva</td>
+                        <td>Mario José da Silva</td>
+                        <td>01/01/2025</td>
+                        <td>R$ 600,00</td>
+                    </tr>
+                    <tr>
+                        <td>0002</td>
+                        <td>José da Silva</td>
+                        <td>Pedro da Silva</td>
+                        <td>01/01/2025</td>
+                        <td>R$ 600,00</td>
+                    </tr>
+                    <tr>
+                        <td>0003</td>
+                        <td>José da Silva</td>
+                        <td>Lara da Silva</td>
+                        <td>01/01/2025</td>
+                        <td>R$ 600,00</td>
+                    </tr>
+                    <tr>
+                        <td>0004</td>
+                        <td>José da Silva</td>
+                        <td>Rodrigo da Silva</td>
+                        <td>01/01/2025</td>
+                        <td>R$ 600,00</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </fieldset>
+    <br>
+    <fieldset>
+        <br>
+        <button type="submit">Lançar Pedido</button>
+        <button type="submit">Listar Vendas</button>
+        <button type="reset">Limpar</button>
+
+        </form>
+    </fieldset>
+</body>
+
+</html>

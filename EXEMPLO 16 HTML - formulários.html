@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemplo 16 - Formulários</title>
+</head>
+<body>
+    <form action="paginaDestino.aspx" method="get">
+        <h1>Exemplo 16 - Formulários</h1>
+        <fieldset>
+            <legend>Cadastro</legend>
+            <div>
+                <label for="">Nome</label><br>
+                <input type="text" name="txtNome" id="txtNome" required>
+            </div>
+            <br>
+            <div>
+                <label for="">Ano de Nascimento</label><br>
+                <input type="number" name="txtAnoNascimento" id="txtAnoNascimento" min="1910" max="2200">
+            </div>
+            <br>
+            <div>
+                <label for="">Informe sua Cor Favorita</label><br>
+                <input type="color" name="txtCor" id="txtcor">
+            </div>
+            <br>
+            <div>
+                <label for="">Fale um pouco sobre você</label><br>
+                <textarea name="txtFaleMais" id="txtFaleMais" cols="30" row="20" font-size="500px"></textarea>
+            </div>
+            <br>
+            <div>
+                <button type="submit">Salvar</button>
+            </div>
+        </fieldset>
+
+    </form>
+</body>
+</html>
