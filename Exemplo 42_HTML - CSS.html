@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemplo 42 HTML CSS</title>
+    <style>
+        body{
+            margin: 0;
+        }.container{
+            display: grid;
+            grid-template-columns: 80% 1fr;
+            grid-template-rows: 20% 1fr 10%;
+            grid-gap: 20px;
+            height: 100vh;
+        }header{
+            background-color: deeppink;
+            grid-column-start: 1;
+            grid-column-end: 3;
+        }main{
+            background-color: lightblue;
+        }aside{
+            background-color: lightgreen;
+        }footer{
+            background-color: lawngreen;
+            grid-column: 1/3;
+        }section{
+            margin-left: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            1
+        </header>
+        <main>
+            2
+            <h2>O que é o grid Layout</h2>
+            <article>
+                <p>O grid Layout é bidmensional, permitindo que o desenvolvedor possa separar o layout da página em linhas e colunas, diferentemente do Flexbox que é unidimensional, ordenando os elementos em linha.</p>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sunt eligendi provident cumque vero minus, eos sit in eaque vel reprehenderit, fugit est debitis dignissimos, placeat necessitatibus corporis ab? A, illum.</p>
+            </article>
+            <article>
+                <h2>Flexbox ou Grid Layout</h2>
+                <p>O Flexbox e o CSS Grid Layout podem ser utilizados em conjunto. Você pode aplicar o flexbox dentro da grade criada pelo Grid Layout, aproveitando o melhor das duas tecnicas.</p>
+                <p>A escolha entre flexbox e Grid Layout não se trata de um substituir o outro, mas sim de entender as necessidades específicas do seu layout e escolher a tecnica que melhor atenda às suas necessidades.</p>
+            </article>
+        </main>
+        <aside>
+            3
+        </aside>
+        <footer>
+            4
+        </footer>
+    </div>
+
+</body>
+</html>

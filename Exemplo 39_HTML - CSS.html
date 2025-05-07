@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.cdnfonts.com/css/roboto" rel="stylesheet"> 
+    <title>Exemplo 39 - HTML CSS</title>
+    <style>
+        body{
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            margin: 20px;
+
+        }
+        .div1{
+            border-left: solid red 8px;
+            padding: 25px;
+            margin: 20px;
+            font-size: 1.2rem;
+            font-weight: bold;
+            text-align: justify;
+            box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+        }
+        .flex-container{
+            display: flex;
+            background-color: rgb(110,6,236);
+            font-family:'Roboto Black', sans-serif ;
+            flex-wrap: wrap;
+
+        }
+        .flex-container>div{
+            background-color: rgb(235,5,166);
+            color: white;
+            margin: 10px;
+            padding: 20px;
+            font-size: 30px;
+            width: 40%;
+        }
+        span{
+            font-weight: bold;
+            color:rgb(235,5,166);
+        }
+    </style>
+</head>
+<body>
+    <h1>Exemplo 39 FlexBox / Flex-wrap</h1>
+    <h2>Flex-wrap: <span>Wrap</span></h2>
+    <div class="div1">
+        <p>A propriedade CSS Flex-wrap é aquela que define se os iten flexíveis são forçados a ficarem na mesma linha ou se podem ser quebrados em várias linhas.</p>
+        <p>
+            O valor padrão do Flex-wrap é nowrap, o que significa que os itens flexíveis são forçados a ficarem na mesma linha, mesmo que isso signifique que eles seja redimensionados para caber no espaço disponível. Se o valor for Wrap, os itens flexíveis podem ser quebrados em várias linhas.
+        </p>
+        <p>O Flex-wrap  controla a direção em que as linhas são empilhadas. O valor Wrap padrão empilha as linhas da esquerda para a direita, se o Flex-direction for Row, ou de cima par baixo se ele for Column. O valor Wrap-reverse empilha as linhas da esquerda para a direita ou de baixo para cima, respectivamente.</p>
+    </div>
+    <div class="flex-container">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+        <div>4</div>
+    </div>
+</body>
+</html>

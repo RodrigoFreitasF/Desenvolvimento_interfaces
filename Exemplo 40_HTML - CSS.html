@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemplo 40 HTML - CSS</title>
+    <style>
+        .wrapper{
+            display: flex;
+            flex-flow: row wrap;
+            font-weight: bold;
+            text-align: center;
+        }.wrapper>*{
+            padding:10px;
+            flex: 1 100% ;
+        }.header{
+            background-color: tomato;
+
+        }.footer{
+            background: lightgreen;
+        }.main{
+            text-align: justify;
+            background: deepskyblue;
+        }.aside-1{
+            background: gold;
+        }.aside-2{
+            background: hotpink;
+        }@media all and (min-width: 600px){
+            .aside{
+                flex: 1 0 0;
+            }
+        } @media all and (min-width: 800px){
+            .main{
+                flex: 3 0px;
+            }.aside-1{
+                order: 3;
+            }.main{
+                order: 2;
+            }.aside-2{
+                order:1;
+            }footer{
+                order:4;
+            }body{
+                padding: 2em;
+            }
+        }
+
+    </style>
+</head>
+<body>
+    <div class="wrapper">
+        <header class="header">Header</header>
+        <article class="main">
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptate laborum ad velit, aliquam molestiae fuga. Possimus dolore, sapiente similique nihil illum reprehenderit ut et consequuntur ipsum corporis eaque nisi beatae. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dicta, porro? Nisi eos molestiae voluptates blanditiis in, ex quasi ad debitis nobis ullam illum perspiciatis delectus voluptate veniam ut? Odio, ab.</p>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Id vero amet vitae! Cupiditate, reprehenderit alias recusandae totam asperiores nemo nostrum, quae soluta tempore corporis quidem qui omnis ea? Earum, atque.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis accusantium placeat, voluptatem sequi officia sed ad, a aperiam error eius fugit ratione deleniti laudantium dolores perspiciatis beatae corrupti. Provident, cumque!</p>
+        </article>
+        <aside class="aside aside-1">
+             aside1
+        </aside>
+        <aside class="aside aside-2">
+            aside2
+       </aside>
+       <footer class="footer">Footer</footer>
+    </div>
+</body>
+</html>
